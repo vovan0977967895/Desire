@@ -381,8 +381,112 @@
       color: #707070;
    }
 }
+.decor{
+   padding: 172px 0 156px 0;
+   background-image: url(../images/content/decor-bg.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   min-height: 600px;
+   &__title{
+      max-width: 520px;
+      color: $title;
+      font-size: 60px;
+      line-height: 133%;
+      @extend %title-font;
+      position: relative;
+      padding-bottom: 22px;
+      margin-bottom: 22px;
+      
+      &::after{
+         content: '';
+         position: absolute;
+         left: 0;
+         bottom: 0;
+         width: 200px;
+         background: #6D7278;
+         height: 1px;
+      }
+   }
+   &__text{
+      max-width: 540px;
+      font-size: 16px;
+      line-height: 175%;
+   }
+}
+.works-path{
+   padding: 80px 0 30px;
+   &__title{
+     text-align: center;
+     color: $title;
+     font-size: 36px;
+     line-height: 141%;
+     @extend %title-font;
+   }
+   &__items-box{
+      display: flex;
+      align-items: flex-end;
+      border-bottom: 2px solid rgba($title, .7);      
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        left: -10px;
+        bottom: -6px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: rgba($title, .7);
+
+      }
+   }
+   &__item{
+      width: 250px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      position: relative;
+   }
+   
+   &__item--consultation, &__item--production {
+      padding-bottom: 38px;
+   }
+   &__item--measuring{
+      padding-top: 38px;
+      margin-left: 305px;
+      &::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 20px;
+      background-color: rgba($title, .7);
+      width: 2px;
+      }
+   }
+   &__item--production{
+   margin-left: 317px;
+   &::after{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 20px;
+      background-color: rgba($title, .7);
+      width: 2px;
+
+   }
+   }
+   &__item-title{
+      margin-left: 12px;
+      color: $title;
+      @extend %title-font;      
+   }
+   &__item-text{
+      margin-top: 13px;
+   }
+}
 
 
-/*4-08*/
+/*4-54*/
 
 
